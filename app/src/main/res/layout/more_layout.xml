@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+    <RelativeLayout
+        android:id="@+id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:id="@+id/titleBg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#106184"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="设置"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:textColor="#ffffff"
+            android:padding="3dp"
+            android:textSize="18sp"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scorllView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topPanel">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                >
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:shrinkColumns="0"
+                    android:stretchColumns="0">
+                    <TableRow android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/more_item_bg"
+                        android:paddingBottom="16dp"
+                        android:paddingTop="8dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="我的App"
+                            android:drawableLeft="@drawable/mylike"
+                            android:textSize="16sp"
+                            android:textColor="#ff333333"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="right"
+                            android:paddingRight="20dp"
+                            android:src="@drawable/ic_arrow"/>
+
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_marginTop="20dp"
+                android:layout_width="fill_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:shrinkColumns="0"
+                    android:stretchColumns="0">
+                    <TableRow android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/more_top_bg"
+                        android:paddingBottom="16dp"
+                        android:paddingTop="8dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="我的App"
+                            android:drawableLeft="@drawable/mylike"
+                            android:textSize="16sp"
+                            android:textColor="#ff333333"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="right"
+                            android:paddingRight="20dp"
+                            android:src="@drawable/ic_arrow"/>
+
+                    </TableRow>
+
+                    <TableRow
+
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/more_middle_bg"
+                        android:paddingBottom="16dp"
+                        android:paddingTop="8dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="推荐朋友"
+                            android:drawableLeft="@drawable/search_friends"
+                            android:textSize="16sp"
+                            android:textColor="#ff333333"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="right"
+                            android:paddingRight="20dp"
+                            android:src="@drawable/ic_arrow"/>
+
+                    </TableRow>
+
+                    <TableRow
+
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/more_bottom_bg"
+                        android:paddingBottom="16dp"
+                        android:paddingTop="8dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="账号管理"
+                            android:drawableLeft="@drawable/myfollow"
+                            android:textSize="16sp"
+                            android:textColor="#ff333333"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="right"
+                            android:paddingRight="20dp"
+                            android:src="@drawable/ic_arrow"/>
+
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

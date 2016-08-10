@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tomato.z.androidday19">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".home.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".text1.MainActivity01" />
+        <activity android:name=".text2.MainActivity02" />
+        <activity android:name=".text3.MainActivity03" />
+        <activity android:name=".text4.MainActivity04" />
+        <activity android:name=".text5.MainActivity05" />
+        <activity android:name=".text6.MainActivity07"></activity>
+    </application>
+
+</manifest>

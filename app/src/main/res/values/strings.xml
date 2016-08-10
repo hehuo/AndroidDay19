@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AndroidDay19</string>
+
+    <string-array name="arrTabTitle">
+        <item>要闻</item>
+        <item>视频</item>
+        <item>河南</item>
+        <item>娱乐</item>
+    </string-array>
+</resources>

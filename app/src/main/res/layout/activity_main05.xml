@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".text5.MainActivity05">
+
+    <RelativeLayout
+       android:id="@+id/tab_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F2F2F2">
+
+
+        <!-- scrollbars="none"  无滚动条-->
+        <HorizontalScrollView
+
+            android:id="@+id/scorllView"
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:fadingEdge="none"
+            android:layout_height="40dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:background="#5AB0EB">
+                <RadioGroup
+                    android:id="@+id/rg_nav_content"
+                    android:layout_width="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:background="#F2F2F2"
+                    android:orientation="horizontal"
+                    android:layout_height="40dp">
+
+                </RadioGroup>
+                <ImageView
+                    android:id="@+id/iv_nav_indicator"
+                    android:layout_width="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:scaleType="matrix"
+                    android:background="#5AB0EB"
+                    android:layout_height="5dp" />
+
+            </RelativeLayout>
+
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mViewPager"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tab_page"
+        android:background="#ffffff"
+        >
+
+    </android.support.v4.view.ViewPager>
+
+
+</RelativeLayout>

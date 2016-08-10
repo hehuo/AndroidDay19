@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".text4.MainActivity04">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/line_bottom"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@drawable/main_navigation_background"
+        android:layout_height="65dp">
+        <RadioGroup
+            android:id="@+id/tab_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:paddingTop="2.0dp"
+            android:orientation="horizontal"
+            android:background="@drawable/main_navigation_background"
+            >
+            <RadioButton
+                android:id="@+id/main_tab_home"
+                android:drawableTop="@drawable/main_navigation_home"
+                style="@style/tab_rb"
+                android:checked="true"
+                android:text="首页"
+                />
+
+            <RadioButton
+                android:id="@+id/main_tab_catogory"
+                android:drawableTop="@drawable/main_navigation_catagory"
+                style="@style/tab_rb"
+                android:text="分类"
+                />
+
+            <RadioButton
+                android:id="@+id/main_tab_car"
+                android:drawableTop="@drawable/main_navigation_car"
+                style="@style/tab_rb"
+                android:text="购物车"
+                />
+
+            <RadioButton
+                android:id="@+id/main_tab_buy"
+                android:drawableTop="@drawable/main_navigation_personal"
+                style="@style/tab_rb"
+                android:text="购物中心"
+                />
+
+            <RadioButton
+                android:id="@+id/main_tab_more"
+                android:drawableTop="@drawable/main_navigation_more"
+                style="@style/tab_rb"
+                android:text="更多"
+                />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</RelativeLayout>

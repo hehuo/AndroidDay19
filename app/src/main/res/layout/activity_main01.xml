@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".text1.MainActivity01">
+
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rb1"
+            android:checked="true"
+            style="@style/rb_style"
+            android:drawableTop="@android:drawable/ic_dialog_info"
+            android:text="要闻"/>
+        <RadioButton
+            android:id="@+id/rb2"
+            android:checked="true"
+            style="@style/rb_style"
+            android:drawableTop="@android:drawable/ic_dialog_email"
+            android:text="视频"/>
+        <RadioButton
+            android:id="@+id/rb3"
+            android:checked="true"
+            style="@style/rb_style"
+            android:drawableTop="@android:drawable/ic_dialog_map"
+            android:text="河南"/>
+        <RadioButton
+            android:id="@+id/rb4"
+            android:checked="true"
+            style="@style/rb_style"
+            android:drawableTop="@android:drawable/ic_dialog_dialer"
+            android:text="娱乐"/>
+    </RadioGroup>
+
+    <TextView android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#0373b4"/>
+
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+</LinearLayout>
